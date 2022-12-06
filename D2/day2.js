@@ -36,28 +36,16 @@ const xyz = {
 		A: pointsDraw + pointsRock, //rock rock
 		B: pointsLose + pointsRock, //rock paper
 		C: pointsWin + pointsRock, //rock scisors
-
-		X: pointsLose + pointsRock,
-		Y: pointsDraw + pointsRock,
-		Z: pointsWin + pointsRock,
 	},
 	Y: {
 		A: pointsWin + pointsPaper, //paper rock
 		B: pointsDraw + pointsPaper, //paper paper
 		C: pointsLose + pointsPaper, //paper scisors
-
-		X: pointsLose + pointsPaper,
-		Y: pointsDraw + pointsPaper,
-		Z: pointsWin + pointsPaper,
 	},
 	Z: {
 		A: pointsLose + pointsScisors, //scisors rock
 		B: pointsWin + pointsScisors, //scisors paper
 		C: pointsDraw + pointsScisors, //scisors scisors
-
-		X: pointsLose + pointsScisors,
-		Y: pointsDraw + pointsScisors,
-		Z: pointsWin + pointsScisors,
 	},
 };
 
