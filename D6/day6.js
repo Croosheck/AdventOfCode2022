@@ -28,4 +28,3 @@ async function day6() {
 	markerMessage(4, p1, "1");
 	markerMessage(14, p2, "2");
 }
-day6();
