@@ -1,4 +1,10 @@
 /////////////// DAY 2 ///////////////////
+function runHandler(e) {
+	e.preventDefault();
+	day2();
+}
+run.addEventListener("click", runHandler);
+
 const pointsRock = 1;
 const pointsPaper = 2;
 const pointsScisors = 3;
@@ -92,10 +98,7 @@ async function day2() {
 		playerXYZScore += xyz[item[2]][item[0]];
 	});
 
-	console.log("PART 1");
-	console.log(`Player ABC Score: ${playerABCScore}`);
-	console.log(`Player XYZ Score: ${playerXYZScore}`);
-	console.log("\n");
+	p1.innerHTML = `Part 1: Player ABC Score: ${playerABCScore} ||| Player XYZ Score: ${playerXYZScore}`;
 
 	//part2
 	filteredData.forEach((item) => {
@@ -103,5 +106,5 @@ async function day2() {
 	});
 	console.log("PART 2");
 	console.log(`Player XYZ Score: ${playerXYZScorePart2}`);
+	p2.innerHTML = `Part 2: Player XYZ Score: ${playerXYZScorePart2}`;
 }
-// day2();

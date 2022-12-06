@@ -1,4 +1,10 @@
 /////////////// DAY 3 ///////////////////
+function runHandler(e) {
+	e.preventDefault();
+	day3();
+}
+run.addEventListener("click", runHandler);
+
 async function day3() {
 	const response = await fetch("day3Input.txt");
 
@@ -37,7 +43,7 @@ async function day3() {
 			}
 		}
 	});
-	// console.log(sumPart1);
+	p1.innerHTML = `Part 1: ${sumPart1}`;
 
 	//part2
 	let groups = [];
@@ -66,7 +72,5 @@ async function day3() {
 			}
 		}
 	});
-
-	console.log(sumPart2);
+	p2.innerHTML = `Part 2: ${sumPart2}`;
 }
-// day3();
