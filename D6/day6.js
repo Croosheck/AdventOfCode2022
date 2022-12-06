@@ -25,6 +25,10 @@ async function day6() {
 			}
 		}
 	}
+	
+	//Part1
 	markerMessage(4, p1, "1");
+	
+	//Part2
 	markerMessage(14, p2, "2");
 }
