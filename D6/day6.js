@@ -20,7 +20,7 @@ async function day6() {
 			sequence.shift();
 			sequence.push(data[i]);
 			const sequenceCheck = new Set(sequence);
-			if (sequence.length === [...sequenceCheck].length) {
+			if (sequence.length === sequenceCheck.size) {
 				return (pp.innerHTML = `Part ${pNum}: ${i + 1}`);
 			}
 		}
