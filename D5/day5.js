@@ -15,8 +15,13 @@ async function day5() {
 	const filteredData = newData.filter((i) => i !== "");
 
 	const stackArr = [];
+	let stepsStartRow;
 
-	for (let i = 0; i < 8; i++) {
+	for (let i = 0; i < filteredData.length; i++) {
+		if (filteredData[i][1] === "1") {
+			stepsStartRow = i + 1;
+			break;
+		}
 		stackArr.push(filteredData[i]);
 	}
 
@@ -47,8 +52,9 @@ async function day5() {
 
 	const steps = [];
 
-	for (let i = 9; i < filteredData.length; i++) {
+	for (let i = stepsStartRow; i < filteredData.length; i++) {
 		const extractedNums = filteredData[i].match(/\d+/g);
+
 		const numsArr = [
 			Number(extractedNums[0]),
 			Number(extractedNums[1]),
