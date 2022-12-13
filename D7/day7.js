@@ -14,8 +14,6 @@ async function day7() {
 
 	const filteredData = newData.filter((i) => i !== "");
 
-	// p2.innerHTML = `Part 2: `;
-
 	function createTree(lines) {
 		const tree = {
 			name: "/",
